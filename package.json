@@ -1,0 +1,24 @@
+{
+  "name": "gestor-hoteles",
+  "version": "1.0.0",
+  "description": "Proyecto final bimestre 2",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel de Jesus Estrada Rojo, Brayan Daniel Cabrera Mendoza, César Alexander Barillas Dominguez, Melvin Josué Herrera Muy, Wilhem Yahir Lopez Colindres",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-validator": "^6.15.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.9.1",
+    "nodemon": "^2.0.20",
+    "notenv": "^2.0.3"
+  }
+}
