@@ -7,6 +7,14 @@ class Server{
         //variables de configuración
         this.app = express();
         this.port = process.env.PORT;
+        
+        this.paths= {
+            usuario: '/api/usuarios',
+            servicio: '/api/servicio'
+
+        }
+        
+        
         //Conectar a la base de datos
         this.conectarDB();
 
@@ -34,6 +42,8 @@ class Server{
     }
 
     routes(){
+        this.app.listen(this.paths , require('../routes/servicios'));
+        this.app.listen(this.paths , require('../routes/usuario'));
     }
 
     listen(){
